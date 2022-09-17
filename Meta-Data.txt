@@ -1,0 +1,46 @@
+#Inspiration/Ideas
+https://dev.to/
+https://dribbble.com/
+
+#Colors Themes
+https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+https://coolors.co/091e05-004f2d-d87cac-f9b9c3-ffda22
+https://coolors.co/gradients
+
+#Abstract Design Elements/UI/UX
+https://coolbackgrounds.io/
+https://heropatterns.com/
+https://squircley.app/
+https://msurguy.github.io/flow-lines/
+https://codepen.io/winkerVSbecks/full/wrZQQm/
+https://www.shapedivider.app/
+https://app.haikei.app/
+https://tabbied.com/
+
+#Images
+https://unsplash.com/
+https://www.pexels.com/
+
+#Icons/Illustration
+https://www.flaticon.com/
+https://www.freepik.com/
+https://icons8.com/
+https://storyset.com/
+https://undraw.co/illustrations
+https://drawkit.com/
+
+#Typography
+https://fonts.google.com/
+https://www.dafont.com/
+
+#Miscellaneous
+https://www.instagram.com/p/CFhXKT-gD4u/?utm_source=ig_web_copy_link
+https://www.w3schools.com/js/
+https://roadmap.sh/
+https://css-tricks.com/
+
+#DataBases
+https://www.javatpoint.com/mongodb-tutorial
+
+#Topics
+Music Streaming Apps
