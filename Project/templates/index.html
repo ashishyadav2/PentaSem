@@ -14,11 +14,11 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Bootstrap CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap-icons.css') }}" rel="stylesheet">
   
   <!--Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet">
 
 </head>
 
@@ -29,12 +29,12 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html">Fake News Detection</a></h1>
+        <h1><a href="/">Fake News Detection</a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="getstarted scrollto" href="./prediction.html">Check News</a></li>
+          <li><a class="getstarted scrollto" href="/prediction">Check News</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -48,9 +48,10 @@
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Fake news detection using machine learning</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with Bootstrap</h2>
+          <h2 data-aos="fade-up" data-aos-delay="400">The rise of Fake news has become a global problem that even major tech companies like Facebook and  Google are struggling to solve.  It can be difficult to determine whether a text is factual without       additional context and human judgement.
+          </h2>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="./prediction.html" class="btn-get-started scrollto">Check News</a>
+            <a href="/prediction" class="btn-get-started scrollto">Check News</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">

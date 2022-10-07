@@ -1,9 +1,0 @@
-#prerequisite
-python 3
-vs code
-pip install jupyter notebook
-
-#for demo of flask project
-python app.py
-
-

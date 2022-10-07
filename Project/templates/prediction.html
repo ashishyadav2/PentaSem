@@ -14,12 +14,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Bootstrap CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  
+  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap-icons.css') }}" rel="stylesheet">
+    
   <!--Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/style-predict.css" rel="stylesheet">
+  <link href="{{ url_for('static',filename='css/style-predict.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet">
 
 </head>
 
@@ -30,7 +30,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html">Fake News Detection</a></h1>
+        <h1><a href="/">Fake News Detection</a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -43,11 +43,11 @@
     </div>
   </header><!-- End Header -->
   <section id="form">
-    <form>
-        <textarea placeholder="Type or paste news title"></textarea>
+    <form action="/prediction" method="POST">
+        <textarea placeholder="Type or paste news title" name="news"></textarea>
         <button id="check-btn">Check</button>
         <div id="news-status">
-            <div id="output" class="fake">News is fake</div>
+            <div id="output" class="{{class_name}}">{{prediction_text}}</div>
             <div id="sources">
                 <p>Sources</p>
                 <div id="src">
@@ -79,7 +79,7 @@
   </section>
  
   <!--Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="static/js/main.js"></script>
 
 </body>
 
