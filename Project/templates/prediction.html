@@ -44,34 +44,16 @@
   </header><!-- End Header -->
   <section id="form">
     <form action="/prediction" method="POST">
-        <textarea placeholder="Type or paste news title" name="news"></textarea>
+        <textarea placeholder="Type or paste news title" name="news" required></textarea>
         <button id="check-btn">Check</button>
         <div id="news-status">
             <div id="output" class="{{class_name}}">{{prediction_text}}</div>
             <div id="sources">
                 <p>Sources</p>
                 <div id="src">
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
-                    <span class="src"><a href="#">facebook.com</a></span>
+                  {% for i in url_list %}
+                    <span class="src"><a href="{{i}}">{{i}}</a></span>
+                  {% endfor %}
                 </div>
             </div>
         </div>
